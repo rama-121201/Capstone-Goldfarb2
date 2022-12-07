@@ -1,0 +1,70 @@
+{"intents": [
+  {"tag": "sapa",
+  "patterns": ["hallo", "hei", "hai", "halo", "hi", "selamat pagi", "selamat siang", "selamat sore", "selamat malam"],
+  "responses": ["Hallo! Ada yang bisa dibantu?"]
+  },
+
+  {"tag": "bye",
+    "patterns": [
+      "Selamat Tinggal",
+      "bye",
+      "Dah",
+      "Semoga harimu menyenangkan",
+      "Sampai Jumpa Lagi",
+      "Ok bye"
+    ],
+    "responses": [
+      "Sampai jumpa lagi yaa, semoga harimu menyenangkan!"
+    ]
+  },
+
+  {"tag": "nama",
+  "patterns": ["ini apa","siapa namamu", "nama", "nama kamu", "siapa", "kamu siapa", "ini siapa", "dengan siapa"],
+  "responses": ["Saya adalah Trashbot, asisten digital yang siap membantu menjawab pertanyaan kamu"]
+  },
+
+  {"tag": "trashbot",
+  "patterns": ["aplikasi Hi-Trash itu apa", "apa itu trashbot", "ini aplikasi apa"],
+  "responses": ["Aplikasi Hi-Trash adalah aplikasi yang digunakan untuk mempermudah dalam pengklasifikasian jenis sampah organik dan anorganik."]
+  },
+
+  {"tag": "aplikasi",
+  "patterns": ["cara kerja aplikasi", "gimana cara kerjannya", "bagaimana cara menjalankan aplikasi ini", "penggunaan aplikasi", "caranya gimana"],
+  "responses": ["Cara kerja aplikasi ini yaitu ada dua cara. Pertama, user dapat mengambil gambar melalui kamera atau secara realtime. Kedua, user dapat menginputkan gambar yang sudah tersedia. Aplikasi ini akan mendeteksi jenis sampah tersebut apakah termasuk organik atau anorganik, tujuan nya sebagai media pembelajaran kepada masyarakat mengenai jenis-jenis sampah dan juga pemanfaatan nya."]
+  },
+
+  {"tag": "pengertian sampah organik",
+  "patterns": ["apa itu sampah organik?", "sampah organik adalah", "pengertian sampah organik", "sampah organik itu apa", "apa yang dimaksud sampah organik?"],
+  "responses": ["Sampah organik merupakan jenis sampah yang mudah terurai melalui proses alami. Artinya, terurainya sampah organik bisa terjadi tanpa adanya campur tangan manusia."]
+  },
+
+  {"tag": "jenis sampah organik",
+  "patterns": ["apa saja jenis sampah organik?", "jenis sampah organik", "jenis jenis sampah organik", "yang termasuk sampah organik", "contoh sampah organik", "apa saja macam-macam sampah organik", ""],
+  "responses": ["Sampah organik digolongkan menjadi 2 yaitu sampah organik basah dan kering. Pertama, Sampah organik basah yaitu jenis sampah yang mengandung banyak air sehingga bisa menimbulkan bau tidak sedap. Contohnya buah yang busuk, sisa sayur sayuran, kotoran hewan, kulit pisang dan sejenisnya. Kedua, Sampah Organik Kering yaitu sampah yang mengandung kadar air sedikit. Contohnya adalah ranting pohon, kayu, daun-daunan kering."]
+  },
+
+  {"tag": "pemanfaatan sampah organik",
+  "patterns": ["apa saja manfaat sampah organik?", "manfaat sampah organik", "sebutkan manfaat dari sampah organik", "yang termasuk sampah organik", "contoh sampah organik"],
+  "responses": ["Sampah organik diantaranya dapat diolah menjadi pupuk organik, biogas, arang briket, pakan ikan / hewan ternak, kerajinan tangan, dan eco enzyme. Eco enzyme merupakan salah satu alternatif pemanfaatan limbah organik menjadi suatu produk dengan nilai ekonomi dan nilai manfaat yang tinggi."]
+  },
+  
+  {"tag": "pengertian sampah anorganik",
+  "patterns": ["apa itu sampah anorganik?", "sampah anorganik adalah", "pengertian sampah anorganik", "sampah anorganik itu apa", "apa yang dimaksud sampah anorganik?"],
+  "responses": ["Sampah organik merupakan jenis sampah yang mudah terurai melalui proses alami. Artinya, terurainya sampah organik bisa terjadi tanpa adanya campur tangan manusia."]
+  },
+
+  {"tag": "jenis sampah anorganik",
+  "patterns": ["apa saja jenis sampah organik?", "jenis sampah organik", "jenis jenis sampah organik", "yang termasuk sampah organik", "contoh sampah organik", "apa saja macam-macam sampah organik"],
+  "responses": ["Contoh sampah anorganik adalah bahan logam, plastik, kaca, karet, dan kaleng."]
+  },
+
+  {"tag": "pemanfaatan sampah anorganik",
+  "patterns": ["apa saja manfaat sampah anorganik?", "manfaat sampah anorganik", "sebutkan manfaat dari sampah anorganik", "yang termasuk sampah anorganik", "contoh sampah anorganik"],
+  "responses": ["Manfaat sampah anorganik seperti kaca bisa digunakan lagi sebagai wadah, tempat serbaguna, media tanam hingga pot tanaman. Selain itu, sampah ini juga bisa digunakan untuk kerajinan tangan seperti tote bag, tempat pensil, gelang, kolase hiasan dinding, bunga plastik, dan lain-lain."]
+  },
+
+  {"tag": "terima kasih",
+  "patterns": ["thanks", "Thank you", "terimakasih", "makasih", "terimakasih untuk bantuannya"],
+  "responses": ["Terimakasih Kembali"]
+  }
+]}
