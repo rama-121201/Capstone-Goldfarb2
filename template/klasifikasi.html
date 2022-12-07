@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trash Classification</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/css/klasifikasi.css">
+
+  
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header style="background-color: rgb(44, 65, 47);">
+    <div>
+    <button onclick="goBack()" class="btn-nav" ><i class="fa fa-arrow-left"></i></button>
+    </div>
+    <div style="color: #fff;">
+      <h5><b> Trash Classification </b></h5>
+    </div>
+    <div>
+      <p> </p>
+    </div>
+</header>
+
+
+
+
+    <div class="main">
+      <div class="container py-5">
+       <div class="row text-center">
+        <div class="col-md-6 col-lg-6 col-sm-12">
+          <h3>Upload File</h3>
+          <div class="panel">
+            <input id="file-upload" class="hidden" type="file" accept="image/x-png,image/gif,image/jpeg" />
+            <label for="file-upload" id="file-drag" class="upload-box" >
+
+              <div id="upload-caption">drag your image</div>
+              <img id="image-preview" class="hidden" />
+            </label>
+          </div>
+          <div style="margin-bottom: 2rem;">
+            <input type="button" value="Submit" class="button" onclick="submitImage();" />
+            <input type="button" value="Clear" class="button" style="margin-top: 50px;" onclick="clearImage();" />
+          </div>
+        
+          <div id="image-box">
+            <img id="image-display" />
+            <div id="pred-result" class="hidden"></div>
+            <div id="pred-probability" class="hidden" style="visibility: visible;"></div>
+            <svg id="loader" class="hidden" viewBox="0 0 32 32" width="32" height="32">
+              <circle id="spinner" cx="16" cy="16" r="14" fill="none"></circle>
+            </svg>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 col-sm-12">
+          <h3>Kamera</h3>
+          <div class="panel">
+            <img src="{{ url_for('video_feed') }}" height="10%">
+          </div>
+          <div style="margin-bottom: 2rem;">
+            <form method="post" action="{{ url_for('tasks') }}">
+              <input type="submit" value="Mulai Kamera" name="stop" class="button"/>
+              <input type="submit" value="Capture" name="click" class="button" style="margin-top: 50px;"/>
+          </div>
+        
+          <div id="image-box">
+            <img id="image-display" />
+            <div id="pred-result" class="hidden"></div>
+            <svg id="loader" class="hidden" viewBox="0 0 32 32" width="32" height="32">
+              <circle id="spinner" cx="16" cy="16" r="14" fill="none"></circle>
+            </svg>
+          </div>
+        </div>
+       </div>
+      </div>
+     
+</body>
+<footer>
+  <script src="{{ url_for('static',filename='main.js') }}" ></script>
+</footer>
+</html>
